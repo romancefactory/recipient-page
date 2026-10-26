@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5f7">
+
+  <title>A Little Gift from Us | The Romance Factory</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: #fff5f7;
+      color: #49313b;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 440px;
+      width: 100%;
+      padding: 28px 22px;
+      border-radius: 20px;
+      box-shadow: 0 6px 24px #49313b12;
+      text-align: center;
+    }
+
+    .brand {
+      color: #b83260;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .flowers {
+      font-size: 42px;
+      margin: 18px 0;
+    }
+
+    h1 {
+      font-size: 29px;
+      line-height: 1.25;
+      margin: 18px 0 12px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .section {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #f2dce4;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .choices {
+      display: grid;
+      gap: 9px;
+      text-align: left;
+    }
+
+    .choices label {
+      display: block;
+      background: #fff5f7;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .choices label:has(input:checked) {
+      border-color: #b83260;
+      background: #fce8ef;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+      accent-color: #b83260;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 16px;
+      background: #b83260;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: inherit;
+      line-height: 1.4;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: #b83260;
+      border: 1px solid #b83260;
+    }
+
+    .offer {
+      display: none;
+      background: #fff5f7;
+      padding: 20px 16px;
+      border-radius: 14px;
+      margin-top: 18px;
+      border: 1px solid #f2dce4;
+    }
+
+    .offer h2 {
+      color: #b83260;
+      font-size: 25px;
+      line-height: 1.3;
+      margin: 0 0 10px;
+    }
+
+    .discount {
+      font-size: 38px;
+      font-weight: bold;
+      color: #b83260;
+      margin: 18px 0;
+    }
+
+    .coupon-instructions {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 20px;
+      border: 1px dashed #b83260;
+    }
+
+    .coupon-instructions p {
+      margin: 5px 0;
+    }
+
+    .small {
+      font-size: 12px;
+      color: #806c75;
+      margin-top: 24px;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+      color: #ffffff;
+      margin-top: 14px;
+    }
+
+    .whatsapp-button:active {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <div class="brand">The Romance Factory</div>
+
+    <div class="flowers">💐 🌹 💐</div>
+
+    <h1>Someone Thought You Deserved Flowers</h1>
+
+    <p>
+      We hope your flowers brought a smile to your face.
+      Every arrangement is made with love, and we'd love
+      to know what you think.
+    </p>
+
+    <div class="section">
+      <p class="question">
+        Did you love your flower arrangement?
+      </p>
+
+      <div class="choices">
+        <label>
+          <input type="radio" name="feeling" value="Loved it">
+          Loved it! 💖
+        </label>
+
+        <label>
+          <input type="radio" name="feeling" value="It was good">
+          It was good 😊
+        </label>
+
+        <label>
+          <input type="radio" name="feeling" value="Could be better">
+          There is room to improve 💬
+        </label>
+      </div>
+
+      <p>
+        Your honest opinion matters to us. Thank you for
+        letting us be part of this special moment.
+      </p>
+    </div>
+
+    <div class="section">
+      <p class="question">
+        Would you share your experience?
+      </p>
+
+      <p>
+        Your honest Google review helps more people
+        discover The Romance Factory.
+      </p>
+
+      <a
+        class="button"
+        href="https://maps.app.goo.gl/VaN9nFL9LVVcpTxy5?g_st=ic"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Leave Us a Google Review
+      </a>
+    </div>
+
+    <div class="section">
+      <p class="question">
+        Now It's Your Turn to Make Someone's Day 🌹
+      </p>
+
+      <p>
+        Imagine putting the same smile on someone's face
+        by surprising them with a beautiful bouquet.
+        Whether it's for your partner, a friend, or someone
+        who means the world to you, let The Romance Factory
+        help you make the moment unforgettable.
+      </p>
+
+      <button
+        class="button secondary"
+        type="button"
+        id="offerButton"
+        aria-expanded="false"
+        aria-controls="specialOffer"
+      >
+        Claim Your 10% Discount 🎁
+      </button>
+
+      <div class="offer" id="specialOffer" aria-live="polite">
+
+        <h2>A Little Gift from Us to You!</h2>
+
+        <div class="discount">10% OFF</div>
+
+        <p>
+          Enjoy 10% off your next bouquet when you order
+          from The Romance Factory.
+        </p>
+
+        <p>
+          You've experienced the joy of receiving flowers.
+          Now it's your chance to make someone you love
+          feel just as special.
+        </p>
+
+        <p>
+          When placing your next order, mention this offer
+          to claim your 10% discount.
+        </p>
+
+        <div class="coupon-instructions">
+          <p><strong>🎁 How to claim your discount</strong></p>
+
+          <p>
+            1. Take a screenshot of this 10% OFF coupon.
+          </p>
+
+          <p>
+            2. Tap the WhatsApp button below.
+          </p>
+
+          <p>
+            3. Send us your screenshot on WhatsApp to claim
+            your discount on your next bouquet.
+          </p>
+
+          <a
+            class="button whatsapp-button"
+            href="https://wa.me/260976425099?text=Hello%20The%20Romance%20Factory!%20I%27d%20like%20to%20claim%20my%2010%25%20discount%20on%20my%20next%20bouquet.%20I%27ll%20send%20my%20coupon%20screenshot."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Send Coupon on WhatsApp
+          </a>
+        </div>
+
+        <p class="small">
+          The Romance Factory · Lusaka, Zambia
+        </p>
+
+      </div>
+    </div>
+
+    <p class="small">
+      Thank you for being part of our story.
+      With love, The Romance Factory 🌷
+    </p>
+
+  </main>
+
+  <script>
+    const offerButton = document.getElementById("offerButton");
+    const specialOffer = document.getElementById("specialOffer");
+
+    offerButton.addEventListener("click", function () {
+      const isVisible = specialOffer.style.display === "block";
+
+      specialOffer.style.display = isVisible ? "none" : "block";
+
+      offerButton.setAttribute(
+        "aria-expanded",
+        String(!isVisible)
+      );
+
+      offerButton.textContent = isVisible
+        ? "Claim Your 10% Discount 🎁"
+        : "Your Special Offer Is Below 🌹";
+
+      if (!isVisible) {
+        specialOffer.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest"
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
